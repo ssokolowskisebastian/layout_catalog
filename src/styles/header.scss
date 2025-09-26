@@ -1,10 +1,10 @@
 :root {
-  --active-color: #00acdc;
+  --active-color: $button-color;
 }
 
 body {
   margin: 0;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: $font;
   font-size: 12px;
   box-sizing: border-box;
   font-weight: 500;
@@ -42,12 +42,13 @@ body {
 
 .nav__link {
   line-height: 60px;
-  color: #060b35;
+  color: $black-color;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
   align-items: center;
   justify-content: center;
+  transition: $transition-duration;
 }
 
 .is-active {

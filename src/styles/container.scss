@@ -1,10 +1,10 @@
 @import 'variables';
 
 .container {
-  padding: 50px 40px;
+  padding: $container-padding-vertical $container-padding-horizontal;
   display: grid;
   grid-template-columns: repeat(1, $card-width);
-  gap: 46px 48px;
+  gap: $gap-horizontal $gap-vertical;
   justify-content: center;
 
   @each $screen-width, $column in $columns {
